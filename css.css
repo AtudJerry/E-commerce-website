@@ -1,0 +1,157 @@
+body{
+    margin: 0px;
+
+}
+.navbar{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    margin: 30px;
+}
+.logo{
+    margin-left: -250px;
+    margin-top: 14px;
+}
+.cartIcon{
+    margin: 90px;
+    margin-top: 40px;
+    color: rgb(251, 196, 229);
+
+}
+.menubar{
+
+    display: none;
+}
+a{
+    text-decoration: none;
+    font-size: 24px;
+    color:  rgb(250, 202, 231);
+    font-family: sans-serif;
+}
+a:hover{
+    color: rgb(204, 93, 160);
+    transition-property: backgroundColor color;
+    transition-delay: 0.0s;
+    transition-duration: 0.5s;
+
+
+}
+.introPage{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/main-bcg.jpeg) center/cover;
+    height: 100vh;
+    
+}
+h1{
+    color: white;
+    font-family: cursive;
+    font-size: 60px;
+    margin-left: 69px;
+}
+h2{
+    color: white;
+    font-family: monospace;
+    font-size: 40px;
+    margin-left: 69px;
+}
+.productButton{
+    height: 40px;
+    width: 112px;
+    border: 40px;
+    border-radius: 7px;
+    border-color:rgb(91, 16, 108);
+    margin-left: 74px;
+    font-size: 15px;
+    font-family: cursive;
+
+
+}
+.productButton:hover{
+    cursor: pointer;
+    background-color:rgb(113, 5, 70);
+    transition-duration: 0.7s;
+    color: white;
+}
+
+
+
+@media(max-width:900px){
+
+    /* navbar */
+    .menubar{
+        display: contents;
+        color: antiquewhite;
+
+    }
+    .fa-bars{
+        margin: 10px;
+    }
+    .links{
+        display: none;
+    }
+
+    .logo{
+        margin: -17px;
+    }
+    .cartIcon{
+        margin: 15px;
+
+    }
+
+
+
+
+/* body */
+
+
+    h1{
+        color: white;
+        font-family: cursive;
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    h2{
+        color: white;
+        font-family: monospace;
+        font-size: 25px;
+        margin-left: 20px;
+    }
+    .productButton{
+        height: 40px;
+        width: 112px;
+        border: 40px;
+        border-radius: 7px;
+        border-color:rgb(91, 16, 108);
+        margin-left: 20px;
+        font-size: 15px;
+        font-family: cursive;
+    
+    
+    }
+    .productButton:hover{
+        cursor: pointer;
+        background-color:rgb(113, 5, 70);
+        transition-duration: 0.7s;
+        color: white;
+    }
+    .introText{
+        margin-top: 100px;
+    }
+    
+    .introPage{
+
+        /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(./images/main-bcg.jpeg) center/cover; */
+        height: 60vh;
+    }    
+    
+
+}
