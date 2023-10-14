@@ -1,5 +1,7 @@
 body{
     margin: 0px;
+    
+    
 
 }
 .navbar{
@@ -23,6 +25,7 @@ li{
     margin: 90px;
     margin-top: 40px;
     color: rgb(251, 196, 229);
+    background: transparent;
 
 }
 .menubar{
@@ -80,6 +83,34 @@ h2{
     transition-duration: 0.7s;
     color: white;
 }
+.cartCount{
+    height: 80px;
+    width: 80px;
+    margin-right: -8px;
+    
+    z-index: 1;
+    position: relative;
+    border: 2px;
+    border-radius: 5px;
+    
+ 
+    background-color:transparent;
+    color: white;
+    
+}
+.fa-shopping-cart{
+    z-index: 0;
+    position: relative;
+}
+
+
+/* menu page */
+
+
+
+
+
+
 
 
 
@@ -92,18 +123,38 @@ h2{
 
     }
     .fa-bars{
-        margin: 10px;
+        margin: 17px;
     }
     .links{
         display: none;
     }
 
     .logo{
-        margin: -17px;
+        margin: -19px;
+        margin-top: -4px;
     }
     .cartIcon{
         margin: 15px;
 
+    }
+    .cartCount{
+        height: 80px;
+        width: 80px;
+        margin-right: -5px;
+        
+        z-index: 1;
+        position: relative;
+        border: 2px;
+        border-radius: 5px;
+        
+     
+        background-color: transparent;
+        color: white;
+        
+    }
+    .fa-shopping-cart{
+        z-index: 0;
+        position: relative;
     }
 
 
@@ -153,5 +204,42 @@ h2{
         height: 60vh;
     }    
     
+
+    /* menu overlay */
+
+    .menu-overlay{
+        /* background-color: white;
+        height: 80vh;
+        width: 80vw;
+        z-index: 100;
+        margin-top: -53vh;
+        margin-left: 8vw;
+        position: absolute; */
+        visibility: hidden;
+    }
+    
+    .show{
+        background-color: white;
+        height: 80vh;
+        width: 80vw;
+        z-index: 100;
+        margin-top: -53vh;
+        margin-left: 8vw;
+        position: absolute;
+        transition-duration: 0.4s;
+        visibility: visible;
+        
+        
+    }
+    .fa-close{
+      right: 1rem;
+        position: absolute;
+
+    }
+    .link{
+        color: black;
+        
+    }
+   
 
 }
