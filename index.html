@@ -1,64 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
-</head>
-<body>
-<div class="introPage">
-    <nav class="navbar">
-        <button class="menubar"> <i class="fa fa-bars fa-2x"></i> </button>
-        
-            <ul type = "none" class="links">
-                <li> <a href="/">Home</a></li>
-                <li> <a href="/">Products</a></li>
-                <li> <a href="/">About</a></li>
-            </ul>
+    <link rel="stylesheet" href="css.css" />
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="introPage">
+      <nav class="navbar">
+        <button class="menubar"><i class="fa fa-bars fa-2x"></i></button>
 
+        <ul type="none" class="links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Products</a></li>
+          <li><a href="/">About</a></li>
+        </ul>
 
         <div class="logo">
-            <img src="./images/logo-white.svg">
+          <img src="./images/logo-white.svg" />
         </div>
 
         <button class="cartIcon">
-            <span class="cartCount">1</span>
-            <i class="fa fa-shopping-cart fa-2x"> </i>
-            
-           
+          <span class="cartCount">1</span>
+          <i class="fa fa-shopping-cart fa-2x"> </i>
         </button>
+      </nav>
+      <div class="introText">
+        <h1>Rest, Relax, Unwind</h1>
+        <h2>Embrace your choises</h2>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
 
-    </nav>
-   <div class="introText"><h1>Rest, Relax, Unwind</h1><h2>Embrace your choises</h2></div> <br> <br> <br> <br>
+      <button class="productButton">Our Products</button>
+    </div>
 
-   <button class="productButton">Our Products</button>
+    <div class="menu-overlay">
+      <i class="fa fa-close fa-2x"></i>
+      <ul type="none">
+        <li>
+          <a class="link" href="/">
+            <i class="fa fa-home fa-fw"></i>&nbsp;Home</a
+          >
+        </li>
+        <li>
+          <a class="link" href="/">
+            <i class="fas fa-couch fa-fw"></i>&nbsp; Products</a
+          >
+        </li>
+        <li>
+          <a class="link" href="/">
+            <i class="fas fa-book fa-fw"></i> &nbsp;About</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="cart">
+      <i class="fa fa-close fa-2x cart-close"></i>
+      <h3>About to purchase</h3>
+      <br />
+
+      <div class="cart-products">
+        <div class="product">
+            <img class="productItem" src="./images/logo-black.svg" />
+  
+            <div class="productItem">
+              <div class="product-name">Simple chairs</div>
+              <br />
+              <div class="price">price</div>
+              <br />
+              <div class="cart-page-button">remove</div>
+            </div>
+            <div class="productItem">
+              <i class="fa fa-chevron-up"></i><br />
+              <p class="cart-item-amount">2</p>
+              <i class="fa fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
 
 
-</div>
 
 
-<div class="menu-overlay">
 
-<i class="fa fa-close fa-2x"></i>
-<ul type = "none">
-    <li> <a class="link" href="/"> <i class="fa fa-home fa-fw "></i>&nbsp;Home</a></li>
-    <li> <a class="link" href="/">  <i class="fas fa-couch fa-fw"></i>&nbsp; Products</a></li>
-    <li> <a class="link" href="/"> <i class="fas fa-book fa-fw"></i> &nbsp;About</a></li>
+        <div class="product">
+            <img class="productItem" src="./images/logo-black.svg" />
+  
+            <div class="productItem">
+              <div class="product-name">Simple chairs</div>
+              <br />
+              <div class="price">price</div>
+              <br />
+              <div class="cart-page-button">remove</div>
+            </div>
+            <div class="productItem">
+              <i class="fa fa-chevron-up"></i> 
+              <p class="cart-item-amount">2</p>
+              <i class="fa fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
 
-</ul>
-
-</div>
 
 
-<div class="cart">
-    <i class="fa fa-close fa-2x cart-close"></i>
-
-</div>
 
 
+
+
+
+
+    </div>
 
     <script type="module" src="./script.js"></script>
-</body>
+  </body>
 </html>
