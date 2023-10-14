@@ -9,3 +9,8 @@ closebtn.addEventListener('click',()=>{
     console.log('sfdsfdsfsd')
     page.classList.remove('cart-show')
 })
+
+export const cartOpen = ()=>{
+    page.classList.add('cart-show')
+
+}
