@@ -105,6 +105,33 @@ h2{
 
 
 /* menu page */
+.menu-overlay{
+    visibility: hidden;
+}
+
+
+/* cart */
+
+.cart{
+    visibility: hidden;
+}
+
+
+.cart-show{
+    background-color: white;
+    height: 70vh;
+    width: 28vw;
+    z-index: 100;
+    margin-top: -110vh;
+    right: 6rem;
+    position: absolute;
+    transition-duration: 0.8s;
+    overflow: scroll;
+    transform: translateX(40%);
+    visibility: visible;
+    
+
+}
 
 
 
@@ -240,6 +267,31 @@ h2{
         color: black;
         
     }
+
+
+
+    /* cart */
+    .cart{
+        visibility: hidden;
+    }
+
+    .cart-show{
+        background-color: white;
+        height: 55vh;
+        width: 60vw;
+        z-index: 100;
+        margin-top: -73vh !important;        right: 1rem;
+        position: absolute;
+        transition-duration: 0.8s;
+        overflow: scroll;
+        transform: translateX(0%);
+        visibility: visible;
+        
+    
+    }
    
+    .cart-close{
+        left:1rem;
+    }
 
 }
