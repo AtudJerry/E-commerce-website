@@ -11,6 +11,6 @@ closebtn.addEventListener('click',()=>{
 })
 
 export const cartOpen = ()=>{
-    page.classList.add('cart-show')
+    // page.classList.add('cart-show')
 
 }
