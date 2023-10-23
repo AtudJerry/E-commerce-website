@@ -10,6 +10,73 @@ body{
     justify-content: space-between;
 }
 
+
+/* about page */
+.navbarAbout{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-color:rgb(61, 23, 46);
+    height: 20vh;
+}
+.introPageAbout{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/main-bcg.jpeg) center/cover;
+    height: 100vh;
+    color: black;
+    
+    
+}
+.introTextAbout{
+    height: 10vh;
+    background-color: rgb(61, 23, 46);
+    
+}
+.introText-text{
+    margin-top: 70px;
+}
+.back{
+    /* height: 40px;
+    width: 112px;
+   
+    border-color:rgb(91, 16, 108);
+  
+    font-size: 15px; */
+ 
+   
+    font-family: cursive;
+    color: black;
+
+
+}
+.back-but{
+    margin-left: 74px;
+    height: 40px;
+    width: 112px;
+    border: 40px;
+    border-radius: 7px;
+
+}
+.historyHeading{
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+.lorem{
+    margin-left: 300px;
+    margin-right: 300px;
+    color: aquamarine;
+}
+
+
+
+
+
+
+
+
+
 .links{
     display: flex;
     justify-content: space-between;
@@ -34,8 +101,8 @@ li{
 }
 a{
     text-decoration: none;
-    font-size: 24px;
-    color:  rgb(250, 202, 231);
+    font-size: 20px;
+    color:  rgb(244, 214, 232);
     font-family: sans-serif;
 }
 a:hover{
@@ -51,6 +118,7 @@ a:hover{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(./images/main-bcg.jpeg) center/cover;
     height: 100vh;
+    
     
 }
 h1{
@@ -106,32 +174,58 @@ h2{
 
 /* menu page */
 .menu-overlay{
-    visibility: hidden;
+    display: none;
 }
+.show{
+    /* background-color: white;
+    height: 70vh;
+    z-index: 100;
+    margin-top: -80vh;
+    position: absolute;
+    transition-duration: 0.8s;
+    left: 18rem;
+    right: 18rem; */
+    display: none;
+    
+    
+}
+
+
 
 
 /* cart */
 
 .cart{
-    visibility: hidden;
+    transform: translateX(100%);
+    transition-delay: 2s;
+    transition-duration: 3s;
+    
+    display: none;
+  
 }
+.fa-close{
+    margin-top: 8px;
+    margin-left: 8px;
 
+}
 
 .cart-show{
     background-color: white;
-    height: 70vh;
-    width: 28vw;
+    height: 85vh;
+    width: 33vw;
     z-index: 100;
-    margin-top: -110vh;
+    margin-top: -87vh;
     right: 6rem;
     position: absolute;
-    transition-duration: 0.8s;
+   
     overflow: scroll;
     transform: translateX(20%);
-    visibility: visible;
-  
+    transition: 0.5s ease translate;
+    display: block;
+     /* transition: var(--transition);
+    grid-template-rows: auto 1fr auto; */
+   
     
-
 }
 h3{
     text-align: center;
@@ -163,6 +257,136 @@ h3{
     color: rgb(48, 48, 48);
     font: italic
 }
+
+
+
+
+
+
+
+   /* FEATURED
+     */
+     .featured{
+       
+        margin-left: 90px;
+        margin-right: 10px;
+     }
+
+     .featuredHeading{
+        font-size: 30px;
+        color: black;
+        margin-left: 500px;
+     }
+
+     .featuredImages{
+        width: 20vw;
+        height: auto;
+        border-radius: 8px;
+     }
+     .card{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        height: 45vh;
+        /* text-align: center; */
+        
+     }
+     .productName{
+        margin-top: 5px;
+        margin-left: 120px;
+        
+
+     }
+     .price{
+        margin-top: 5px;
+        margin-left: 120px;
+        
+     }
+
+     .productIcons{
+        display: flex;
+        
+     }
+     .background1{
+        background-color: rgb(77, 6, 48) ;
+       width: 30px;
+       border-radius: 60px;
+       margin: 3px;
+     }
+     .background2{
+        background-color: rgb(77, 6, 48) ;
+        width: 30px;
+        border-radius: 60px;
+        margin: 3px;
+     
+     }
+     .pIcon{
+        color: white;
+        margin: 7px;
+       
+      
+     }
+     .productIcons{
+        margin-top: -200px;
+    margin-left: 90px;
+        opacity: 0;
+     }
+    
+     
+     .background1:hover{
+        background-color: black;
+        cursor: pointer;
+    
+     }
+     .background2:hover{
+        background-color: black;
+        cursor: pointer;
+        
+     } 
+     .card:hover .productIcons{
+        opacity: 1;
+        transition-delay: 0.05s;
+        transition-duration: 1s;
+     }
+     .cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+     }
+    
+     
+    
+
+
+     /* .background1{
+        background-color: rgb(77, 6, 48) ;
+        margin: 6px;
+        border: 1px;
+        border-radius: 100%;
+     }
+     .background2{
+        background-color: rgb(77, 6, 48) ;
+        margin: 6px;
+        border: 1px;
+        border-radius: 100%;
+     }
+     .background1:hover{
+        background-color: black;
+        cursor: pointer;
+
+     }
+     .background2:hover{
+        background-color: black;
+        cursor: pointer;
+        
+     }
+
+ 
+    
+
+
+
+ */
 
 
 
@@ -256,36 +480,39 @@ h3{
 
         /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(./images/main-bcg.jpeg) center/cover; */
-        height: 60vh;
+        height: 100vh;
     }    
     
 
     /* menu overlay */
-
+/* 
     .menu-overlay{
-        /* background-color: white;
-        height: 80vh;
-        width: 80vw;
-        z-index: 100;
-        margin-top: -53vh;
-        margin-left: 8vw;
-        position: absolute; */
-        visibility: hidden;
-    }
     
+        display: none;
+           }
+            */
     .show{
-        background-color: white;
-        height: 80vh;
-        width: 80vw;
-        z-index: 100;
-        margin-top: -53vh;
-        margin-left: 8vw;
-        position: absolute;
-        transition-duration: 0.4s;
-        visibility: visible;
-        
-        
-    }
+               background-color: white;
+               height: 80vh;
+               /* width: 80vw; */
+               z-index: 100;
+               margin-top: -90vh;
+               left: 1rem;
+               right: 1rem;
+               position: absolute;
+              
+               transition-duration: 0.8s;
+               transform: translateX(0%);
+               display: block;
+               
+           }
+
+
+
+
+
+
+
     .fa-close{
       right: 1rem;
         position: absolute;
@@ -300,22 +527,23 @@ h3{
 
     /* cart */
     .cart{
-        visibility: hidden;
+    display: none;
     }
 
     .cart-show{
         background-color: white;
-        height: 55vh;
-        width: 90vw;
+        height: 75vh;
+        width: auto;
+       
         z-index: 100;
-        margin-top: -73vh !important;        right: 1rem;
-        position: absolute;
+        margin-top: -90vh  ;
+        right: 1rem;
+        left: 1rem;
+        /* position: absolute; */
         transition-duration: 0.8s;
         overflow: scroll;
         transform: translateX(0%);
-        visibility: visible;
-        
-    
+        display: block
     }
    
     .cart-close{
@@ -348,6 +576,166 @@ h3{
         color: rgb(48, 48, 48);
         font: italic
     }
+
+
+
+
+
+
+
+
   
 
+    /* about page */
+
+    .navbarAbout{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        background-color:rgb(61, 23, 46);
+        height: 10vh;
+    }
+    .introPageAbout{
+    
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(./images/main-bcg.jpeg) center/cover;
+        height: 100vh;
+        color: black;
+        
+        
+    }
+    .introTextAbout{
+        height: 4vh;
+        background-color: rgb(48, 48, 48);
+        
+    }
+    .introText-text{
+        margin-top: 70px;
+    }
+    .back{
+        /* height: 40px;
+        width: 112px;
+       
+        border-color:rgb(91, 16, 108);
+      
+        font-size: 15px; */
+     
+       
+        font-family: cursive;
+        color: black;
+    
+    
+    }
+    .back-but{
+        margin-left: 34px;
+        height: 40px;
+        width: 112px;
+        border: 40px;
+        border-radius: 7px;
+    
+    }
+    .historyHeading{
+        color: rgb(255, 255, 255);
+        text-align: center;
+    
+    }
+    .lorem{
+        margin-left: 10vw;
+        margin-right: 10vw;
+        color: aquamarine;
+    }
+
+
+
+
+
+
+    /* FEATURED
+     */
+     .featured{
+       
+        margin-left: 0px;
+        margin-right: 0px;
+     }
+
+
+
+
+     .productName{
+        margin-top: 5px;
+        margin-left: 35px;
+        
+
+     }
+     .price{
+        margin-top: 5px;
+        margin-left: 35px;
+        
+     }
+
+
+ .featuredImages{
+    width: 90vw;
+    height: auto;
+ }
+
+ 
+ .featuredHeading{
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin-left: 0px;
+ }
+ 
+
+ .productIcons{
+    display: flex;
+    
+ }
+ .background1{
+    background-color: rgb(77, 6, 48) ;
+   width: 30px;
+   border-radius: 40px;
+   margin: 6px;
+ }
+ .background2{
+    background-color: rgb(77, 6, 48) ;
+    width: 30px;
+    border-radius: 40px;
+    margin: 6px;
+ 
+ }
+ .pIcon{
+    color: white;
+   
+  
+ }
+ .productIcons{
+    margin-top: -290px;
+margin-left: 90px;
+    opacity: 0;
+ }
+
+ 
+ .background1:hover{
+    background-color: black;
+    cursor: pointer;
+
+ }
+ .background2:hover{
+    background-color: black;
+    cursor: pointer;
+    
+ } 
+ .card:hover .productIcons{
+    opacity: 1;
+ }
+ .card{
+  text-align: center;
+    
+    height: 45vh;
+    /* text-align: center; */
+    
+ }
 }
+
