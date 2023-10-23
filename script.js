@@ -40,8 +40,8 @@ const func = async()=>{
         
         
     })
+    
     console.log(featured)
-    // console.log(featured)
     return featured
 
 
