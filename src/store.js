@@ -5,12 +5,12 @@ const products = (product)=>{
   store = product.map( (prod)=>{
     const {id,fields:{featured,name,price,company,colors,image:img},} = prod
     const image = img[0].thumbnails.large.url
+    // console.log(store)
     return {id,featured,name,price,company,colors,image}
 
    })
    
  setItem('store',store)
-   console.log(store)
    return  store
     
 

@@ -353,6 +353,12 @@ h3{
         flex-direction: row;
         flex-wrap: wrap;
      }
+     .cardBut{
+        background-color: transparent;
+        border: 0px;
+        color: white;
+        padding: 2px;
+     }
     
      
     
